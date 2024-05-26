@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Design</title>
+</head>
+
+<body>
+
+    <h1>結果都一樣，但背後JS的設計想法不同</h1>
+
+    <h3>方法一</h3>
+    <button onclick="makesound1( dog1 )">狗 怎麼叫</button>
+    <button onclick="makesound1( cat1 )">貓 怎麼叫</button>
+
+    <h3>方法二</h3>
+    <button onclick="makesound2( new dog2())">狗 怎麼叫</button>
+    <button onclick="makesound2( new cat2())">貓 怎麼叫</button>
+
+    <h3>方法三</h3>
+    <button onclick="makesound3( new dog3() )">狗 怎麼叫</button>
+    <button onclick="makesound3( new cat3() )">貓 怎麼叫</button>
+    <button onclick="makesound3( new chicken3() )">雞 怎麼叫</button>
+
+    <p>結果 顯示內容如下:</p>
+    <div id="target"></div>
+
+    <script src="./design_method1.js"></script>
+    <script src="./design_method2.js"></script>
+    <script src="./design_method3.js"></script>
+</body>
+
+</html>
